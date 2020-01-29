@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/peek/Makefile 514402 2019-10-13 15:11:46Z yuri $
+# $FreeBSD: head/audio/Shortwave/Makefile $
 
 PORTNAME=	Shortwave
 DISTVERSION=	0.0.1
@@ -11,6 +11,8 @@ COMMENT=	GNOME Internet streaming radio player written in Rust
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING.md
+
+BROKEN=		won't build
 
 BUILD_DEPENDS=	rustc:lang/rust
 LIB_DEPENDS=	libhandy-0.0.so:x11-toolkits/libhandy
